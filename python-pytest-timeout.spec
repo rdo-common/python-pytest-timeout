@@ -6,7 +6,7 @@ know why the test suite hangs.
 
 Name:           python-%{pypi_name}
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        py.test plugin to abort hanging tests
 
 License:        MIT
@@ -17,7 +17,7 @@ BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python2-pytest
 BuildRequires:  python3-devel
-BuildRequires:  python3-pytest
+#BuildRequires:  python3-pytest
 
 %description
 %{desc}
@@ -62,5 +62,8 @@ Requires:       python3-pytest
 %{python3_sitelib}/__pycache__/pytest_timeout*
 
 %changelog
+* Tue Dec 13 2016 Stratakis Charalampos <cstratak@redhat.com> - 1.0.0-2
+- Rebuild for Python 3.6
+
 * Thu Aug 11 2016 Scott Talbert <swt@techie.net> - 1.0.0-1
 - Initial package.
