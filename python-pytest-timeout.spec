@@ -6,7 +6,7 @@ know why the test suite hangs.
 
 Name:           python-%{pypi_name}
 Version:        1.0.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        py.test plugin to abort hanging tests
 
 License:        MIT
@@ -62,6 +62,9 @@ Requires:       python3-pytest
 %{python3_sitelib}/__pycache__/pytest_timeout*
 
 %changelog
+* Sat Feb 11 2017 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
+
 * Tue Dec 13 2016 Stratakis Charalampos <cstratak@redhat.com> - 1.0.0-2
 - Rebuild for Python 3.6
 
